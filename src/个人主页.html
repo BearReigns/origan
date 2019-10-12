@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>个人主页</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			
+			 .carousel-inner img {
+			      width: 100%;
+			      height: 350px;
+			  }
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			html,body{
+				height: 100%;
+			}
+			#container{
+				/*保证footer是相对于container位置绝对定位*/
+				position:relative;  
+				width:100%;
+				min-height:100%; 
+				/*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/  
+				padding-bottom: 100px;  
+				box-sizing: border-box;
+			}
+			
+			footer{
+			    width: 100%;
+			    height:100px;   /* footer的高度一定要是固定值*/ 
+			    position:absolute;
+			    bottom:0px;
+			    left:0px;
+			    background: #333;
+				
+				
+			}
+		#div2 {
+
+
+
+				background-color: #4f4f4f ;
+				height: 62px;
+				width: 100%;
+				position: fixed;
+				top: 0px;
+				z-index: 3;
+
+
+			}
+
+			#div3 {
+				background-color: burlywood;
+				position: absolute;
+				
+				top: 62px;
+				width: 100%;
+				padding-bottom: 120px;
+				
+
+
+			}
+
+			div p {
+				margin-top: 12px;
+
+				padding-left: 30px;
+
+
+
+			}
+
+			.logo {
+
+				position: absolute;
+				top: 0px;
+
+				left: 300px;
+				width: 60px;
+			}
+
+			#div2 ul {
+				position: absolute;
+				right: 80px;
+				top: 22px;
+			}
+
+			#div2 ul li {
+				float: left;
+				list-style-type: none;
+				margin-left: 22px;
+
+
+
+			}
+
+			#div2 ul li a {
+				text-decoration: none;
+				color: black;
+				font-family: 宋体;
+				font-weight: bold;
+			}
+
+			#div2 ul li a:hover {
+				color: blue;
+			}
+
+			.first {
+
+				width: 48%;
+				height: 500px;
+				margin: 0 auto;
+				margin-top: 60px;
+
+			}
+
+			.img1 {
+				margin-top: 30px;
+				width: 24%;
+				padding: 10px;
+				background-color: white;
+				margin-left: 30px;
+				transform: rotate(10deg);
+			}
+
+			.img2 {
+				width: 24%;
+				transform: rotate(-10deg);
+				padding: 10px;
+				background-color: white;
+				margin-left: 30px;
+				margin-top: 30px;
+			}
+
+			.img1:hover,
+			.img2:hover {
+				transform: rotate(0deg) scale(1.5);
+				transition: 1.2s;
+				z-index: 1;
+			}
+
+			.div-width {
+				width: 80%;
+				margin: 0 auto;
+				background-color: darkgray;
+
+
+			}
+
+			#div-width {
+				width: 80%;
+				margin: 0 auto;
+				background-color: darkgray;
+
+			}
+
+			.div-end {
+
+
+
+				float: left;
+				background-color: darkgray;
+				width: 100%;
+
+
+			}
+
+			.div-c {
+				margin: 0 auto;
+				width: 80%;
+
+			}
+
+			.div-p-p {
+				background-color: blanchedalmond;
+				width: 700px;
+				margin-left: 40px;
+				float: left;
+				margin-top: 45px;
+
+			}
+
+			#div-p-p {
+				background-color: blanchedalmond;
+				width: 700px;
+				margin-left: 40px;
+				float: left;
+				margin-top: 40px;
+
+			}
+
+			.div-p-p1 {
+				background-color: blanchedalmond;
+				width: 700px;
+				margin-left: 40px;
+				float: left;
+				margin-top: 25px;
+
+			}
+
+			#div-s {
+
+				width: 350px;
+				height: 301px;
+				border: solid 1px;
+				background-color: darkgray;
+				margin: 60px 40px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="div2">
+				<p><b>梁浩浩的主页</b><br><b>bearreigns@sina.com</b></p>
+				<img class="logo" src="../image/导航栏.png" alt="">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#基本信息">基本信息</a></li>
+					<li><a href="#兴趣爱好">兴趣爱好</a></li>
+					<li><a href="#个人生活">个人生活</a></li>
+					<li><a href="#所学课程">所学课程</a></li>
+					<li><a href="#所在院校">所在院校</a></li>
+				</ul>
+			</div>
+			<div id="div3">
+			
+				<div>
+					<div class="first">
+			
+			
+			
+						<img class="img1" src="../image/1.jpg">
+						<img class="img1" src="../image/2.jpg">
+			
+						<img class="img1" src="../image/6.jpg"><br>
+						<img class="img2" src="../image/5.jpg"><a name="基本信息"></a>
+						<img class="img2" src="../image/4.jpg">
+						<img class="img2" src="../image/3.jpg">
+			
+			
+					</div>
+				</div>
+				<h3 class="pannel-tittle" style="margin-left: 12%;">基本信息</h3>
+				<br>
+				<div class="row" id="div-width">
+					
+					<div class="col-md-6">
+			
+						<ul class="list-group" style="margin: 35px 0px;">
+							<li class="list-group-item">中文名：梁浩浩</li>
+							<li class="list-group-item">外文名：BearReigns</li>
+							<li class="list-group-item">国籍：中国</li>
+							<li class="list-group-item">民族：汉族</li>
+							<li class="list-group-item">身高：186cm</li>
+							<li class="list-group-item">出生地：河南商丘</li>
+			
+						</ul>
+					</div>
+					<div class="col-md-6">
+			
+						<ul class="list-group" style="margin: 35px 0px;">
+							<li class="list-group-item">出生日期：1999-03-14</li>
+							<li class="list-group-item">职业：学生</li>
+							<li class="list-group-item">毕业院校：郑州升达经贸管理学院（在读）</li>
+							<li class="list-group-item">代表作品：无</li><a name="兴趣爱好"></a>
+							<li class="list-group-item">主要成就：无</li>
+							<li class="list-group-item">称号：无</li>
+			
+						</ul>
+					</div>
+			
+			
+				</div>
+				<div>
+					<h3 style="margin-left: 12%; margin-top: 35px; margin-bottom: 20px;">兴趣爱好</h3>
+			
+					
+					<div class="div-width">
+						<div class="div-p-p">
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-success">喜欢旅游，喜欢旅游时自由自在的样子</li>
+								<li class="list-group-item list-group-item-secondary">喜欢拍照，记录下经典的瞬间</li>
+								<li class="list-group-item list-group-item-info">喜欢看书，感受书中世界的道理</li>
+			
+								<li class="list-group-item list-group-item-primary">喜欢骑车，享受那逆风拼搏的感觉</li>
+								<li class="list-group-item list-group-item-dark">喜欢电影，体会那人生的百态</li><a name="个人生活"></a>
+								<li class="list-group-item list-group-item-light">喜欢中国传统武术</li>
+			
+							</ul>
+						</div>
+						<img src="../image/74e75ca58991cb229b9fb7a8d0ab33b.jpg" width="350px" style="margin: 60px 40px; ;">
+			
+			
+			
+					</div>
+				</div>
+			
+				<div>
+					<h3 style="margin-left: 12%; margin-top: 35px; margin-bottom: 20px;">个人生活</h3>
+			
+					
+					<div class="div-width">
+						<div class="div-p-p1">
+							<div class="card bg-primary text-white">
+								<div class="card-body">大学期间，感觉最扯的事情就是大一劳动教育，那是一段很难忘的生活体验</div>
+							</div>
+							<br>
+							<div class="card bg-success text-white">
+								<div class="card-body">该上课上课，上课认真听讲，上完课该干嘛干嘛</div>
+							</div>
+							<br>
+							<div class="card bg-info text-white">
+								<div class="card-body">在院学生会待过一个半学期，每周部门都会有任务，那段时间会很繁忙</div>
+							</div>
+							<br>
+							<div class="card bg-warning text-white"><a name="所学课程"></a>
+								<div class="card-body">周末一般都去陪女朋友，或者回家，很少有时间呆在宿舍</div>
+							</div>
+			
+						</div>
+						<img src="../image/180dc3f970eb2da874ffc521e00b17a.jpg" width="350px" style="margin: 60px 40px;">
+			
+			
+			
+					</div>
+			
+				</div>
+				<div>
+			
+					<h3 style="margin-left: 12%; margin-top: 35px; margin-bottom: 20px;">所学课程</h3>
+			
+			
+					
+					<div class="div-width">
+						<div class="container">
+			
+			
+							<!-- Nav pills -->
+							<ul class="nav nav-pills" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="pill" href="#home">大一课程</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="pill" href="#menu1">大二课程</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="pill" href="#menu2">大三课程</a>
+								</li>
+							</ul>
+			
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div id="home" class="container tab-pane active"><br>
+									<div class="container">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th colspan="3">C语言： 接触编程的第一门语言，把它学好，以后学其他的会很方便</th>
+			
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="3">大学英语： 以后再社会上闯荡，感觉必不可少的工具</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">高等数学： 都说编程的核心是编程思想和算法逻辑，看来学好这门课很重要</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">计算机基础： 学计算机专业，电脑首先会用</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">实验课： 培养动手能力</td>
+			
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="menu1" class="container tab-pane fade"><br>
+									<div class="container">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th colspan="3">数据结构： 很重要的一门课程</th>
+			
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="3">线性代数： 矩阵，很多方面都会用到</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">计算机组成原理： 深入了解计算机</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">操作系统： 了解计算机操作系统的工作方式</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">数据库： 很重要的一门课程</td>
+			
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div id="menu2" class="container tab-pane fade"><br>
+									<div class="container">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th colspan="3">面向对象程序设计： 更简单的编程</th>
+			
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="3">软件工程： 系统进行项目开发</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">软件评测： 科学的找系统漏洞</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">计算机网络： 学习计算机之间的通信</td>
+			
+												</tr>
+												<tr>
+													<td colspan="3">web前端： 网站页面的搭建</td>
+			
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+			
+					</div>
+			
+				</div>
+			
+			
+			
+				<div>
+					<h3 style="margin-left: 12%; margin-top: 35px; margin-bottom: 20px;">所在院校</h3>
+					<a name="所在院校"></a>
+			
+					<div class="div-c">
+						<div class="div-end">
+			
+							<div id="div-p-p">
+								<div id="demo" class="carousel slide" data-ride="carousel">
+								 
+								  <!-- 指示符 -->
+								  <ul class="carousel-indicators">
+								    <li data-target="#demo" data-slide-to="0" class="active"></li>
+								    <li data-target="#demo" data-slide-to="1"></li>
+								    <li data-target="#demo" data-slide-to="2"></li>
+									<li data-target="#demo" data-slide-to="3"></li>
+									<li data-target="#demo" data-slide-to="4"></li>
+									<li data-target="#demo" data-slide-to="5"></li>
+								  </ul>
+								 
+								  <!-- 轮播图片 -->
+								  <div class="carousel-inner">
+								    <div class="carousel-item active">
+								      <img src="../image/校园2.jpg" title="艺文湖(已重修)">
+								    </div>
+								    <div class="carousel-item">
+								      <img src="../image/校园3.jpg" title="宿舍楼">
+								    </div>
+								    <div class="carousel-item">
+								      <img src="../image/校园4.jpg" title="升达大桥">
+								    </div>
+									<div class="carousel-item">
+									  <img src="../image/校园5.jpg" title="升达大桥">
+									</div>
+									<div class="carousel-item">
+									  <img src="../image/校园7.jpg" title="歌剧在校园">
+									</div>
+									<div class="carousel-item">
+									  <img src="../image/校园.jpg" title="楼顶傍晚">
+									</div>
+								  </div>
+								 
+								  <!-- 左右切换按钮 -->
+								  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+								    <span class="carousel-control-prev-icon"></span>
+								  </a>
+								  <a class="carousel-control-next" href="#demo" data-slide="next">
+								    <span class="carousel-control-next-icon"></span>
+								  </a>
+								 
+								</div>
+			
+							</div>
+			
+							<div id="div-s">
+								<p style="padding: 10px; line-height: 40px; text-indent: 37px;">郑州升达经贸管理学院始建于1993年，前身是由豫籍台湾教育家王广亚博士为董事长的台北广兴文教基金会与郑州大学合作兴办的郑州大学升达经贸管理学院。2011年4月，经教育部批准，转设为独立设置的民办普通本科高校。。</p>
+							</div>
+			
+			
+						</div>
+					</div>
+					<footer>
+						<p style="margin: 30px auto;width: 300px; color: #000000; ">作者： 梁浩浩<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盗版必究</p>
+					
+					</footer>
+		</div>
+			<div style="position: fixed; bottom: 30px; right: 30px;">
+				<a href="#"> <img src="../image/top.png" width="50px"></a>
+			</div>
+		
+		
+
+	</body>
+</html>
